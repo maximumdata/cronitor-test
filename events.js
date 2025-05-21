@@ -20,7 +20,7 @@ cron.schedule('*/5 * * * *', () => {
 
     if(Math.random() < 0.5) {
         monitor.ping({state: 'fail'});
-        throw new Error('random error');
+        throw new Error('random error from events.js');
     } else {
         monitor.ping({state: 'complete'});
         return;
