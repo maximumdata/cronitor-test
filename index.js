@@ -6,7 +6,7 @@ const cronitor = require('cronitor')('77d933c4061d44f1b2f9ae46e6860f6c');
     const monitor = await cronitor.Monitor.put({
         type: 'job',
         key: 'important-background-job',
-        schedule: '45 * * * *'
+        schedule: '59 * * * *'
     });
 
     cronitor.wrap('important-background-job', function () {
