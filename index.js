@@ -7,7 +7,7 @@ cronitor.wraps(nodeCron);
 cronitor.schedule('important-background-job', '*/10 * * * *', function() {
     console.log('running background job with monitoring!');
     
-    if(Math.random() < 0.25) {
+    if(Math.random() < 0.33) {
         throw new Error('random error');
     } else {
         return;
