@@ -4,7 +4,7 @@ cronitor.wraps(nodeCron);
 
 // the first parameter is now the key that Cronitor will use
 // to send telemetry events when the jobs runs, completes or fails
-cronitor.schedule('important-background-job', '*/5 * * * *', function() {
+cronitor.schedule('important-background-job', '*/10 * * * *', function() {
     console.log('running background job with monitoring!');
     
     if(Math.random() > 0.25) {
