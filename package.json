@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "cronitor": "^2.5.1"
+    "cronitor": "^2.5.1",
+    "node-cron": "^4.0.6"
   }
 }
